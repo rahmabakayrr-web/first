@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: show 0.7s ease;
+}
+
+
+@keyframes show {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+.input-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.terms input {
+    accent-color: #667eea;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+
+.bottom-text {
+    text-align: center;
+    margin-top: 25px;
+    color: #777;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+
+.login-box {
+    max-width: 500px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 22px;
+    font-size: 13px;
+    color: #666;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.remember input {
+    accent-color: #667eea;
+}
+
+.remember a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .form-box {
+        padding: 28px 22px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .remember {
+        font-size: 12px;
+    }
+}
